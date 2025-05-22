@@ -1,0 +1,67 @@
+body {
+	background-color: rgb(0, 0, 255, 0.2);
+	
+}
+
+h1 {
+	color: green;
+	margin-bottom: 50px
+}
+
+.formas{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.quadrado {
+	border: solid black 10px;
+	width:150px;
+	height: 150px;
+	background-color: blue;
+	transition: 2s linear;
+	animation: 2s girar;
+
+}
+
+@keyframes girar{
+	0% {
+		transform: rotate(360deg);
+		background-color: green;
+	}
+	
+	50% {
+		
+		background-color: red;
+	}
+	
+	100% {
+		
+		background-color: blue;
+	}	
+}
+
+.quadrado2 {
+	border: solid black 5px;
+	width:150px;
+	height: 150px;
+	background-color: blue;
+	position: relative;
+	animation-name: mymove;
+	animation-duration: 2s ;
+	animation-delay: 2s;
+	
+}
+
+@keyframes mymove {
+	0% {left: 0px; top: 0px; background-color: yellow;}
+	25% {left: 200px; top: 0px; background-color: red;  }
+	50% {left: 200px; top: 200px; background-color: blue; }
+	75% {left: 0px; top: 200px; background-color: green;}
+	100% {left: 0px; top: 0px; background-color: red;}
+}
+
+.quadrado3 {
+	border: solid black 5px;
+	width:150px;
+	height: 150px;
+	background-color: blue;
